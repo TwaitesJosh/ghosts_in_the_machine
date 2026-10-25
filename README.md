@@ -31,7 +31,7 @@ Full outputs are in [`results/gemma-4-26b-a4b/`](results/gemma-4-26b-a4b/).
 | `overnight.py` | Runs everything unattended, in a sensible order, with a summary of every output file in the morning |
 | `ghosts_config.py` | Model paths, llama-server location and flags, shared by all three scripts |
 | `scripts/convert_models.sh` | Downloads both official Gemma 4 models and converts them to GGUF with your own llama.cpp, so both stacks run the same weights |
-| `docs/blog-post.md` | The write-up of the findings, with the roulette chart |
+| `docs/write_up.md` | The write-up of the findings, with the roulette chart |
 | `tests/` | Tests for name parsing and the report (no model needed) |
 
 ## Setup
