@@ -4,7 +4,9 @@
 
 Ask a chat model for a story and you will probably meet Elias: an old clockmaker or lighthouse keeper, quiet, observant, haunted by a loss, and often visited by a woman called Clara. Others have counted these recurring names. This project asks who the characters behind them are, and looks inside the model to see where the name comes from.
 
-Everything here runs locally on one model, Google's **Gemma 4 26B-A4B** (chat and base versions), with llama.cpp for generation and PyTorch for the experiments that need the weights. It was built for the blog post *Who are the ghosts in the machine?* ([link]).
+Everything here runs locally on one model, Google's **Gemma 4 26B-A4B** (chat and base versions), with llama.cpp for generation and PyTorch for the experiments that need the weights. The write-up is in [`docs/blog-post.md`](docs/blog-post.md): *Who are the ghosts in the machine?*
+
+![The base model weighs hundreds of names; the chat model about one](docs/name-roulette.png)
 
 ## Findings (Gemma 4 26B-A4B)
 
@@ -29,6 +31,7 @@ Full outputs are in [`results/gemma-4-26b-a4b/`](results/gemma-4-26b-a4b/).
 | `overnight.py` | Runs everything unattended, in a sensible order, with a summary of every output file in the morning |
 | `ghosts_config.py` | Model paths, llama-server location and flags, shared by all three scripts |
 | `scripts/convert_models.sh` | Downloads both official Gemma 4 models and converts them to GGUF with your own llama.cpp, so both stacks run the same weights |
+| `docs/blog-post.md` | The write-up of the findings, with the roulette chart |
 | `tests/` | Tests for name parsing and the report (no model needed) |
 
 ## Setup
