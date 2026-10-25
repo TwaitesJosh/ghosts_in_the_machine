@@ -1,0 +1,24 @@
+[project]
+name = "ghosts-in-the-machine"
+version = "0.1.0"
+description = "Who are the characters LLMs keep writing? Story analysis, probes and interpretability on Gemma 4."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = ["tqdm>=4.66"]
+
+[project.optional-dependencies]
+torch = ["torch>=2.5", "transformers>=5.0", "accelerate>=1.0", "huggingface_hub>=0.30"]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B"]
+# Long lines and one-line lambdas/ifs are deliberate in the report builders; zip(strict=) needs 3.10.
+ignore = ["E501", "E701", "E702", "E731", "E741", "E402", "B023", "B904", "B905"]

@@ -1,0 +1,8 @@
+# ghosts_torch.py (logit lens, steering, embeddings) on the Hugging Face weights
+-r requirements.txt
+torch>=2.5
+transformers>=5.0      # Gemma 4 support
+accelerate>=1.0        # splitting the model across GPUs and RAM
+huggingface_hub>=0.30
+# optional, only for --load-4bit:
+# bitsandbytes

@@ -1,0 +1,23 @@
+# Experiment outputs (results/ holds the published ones)
+data/
+data_*/
+torch_out*/
+smoke/
+archive/
+overnight_summary.md
+overnight*.log
+llama_server.log
+
+# Models
+*.gguf
+*.gguf.part
+*.safetensors
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/

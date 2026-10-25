@@ -1,0 +1,2 @@
+# ghosts.py and overnight.py: standard library only, plus progress bars
+tqdm>=4.66
