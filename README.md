@@ -4,7 +4,7 @@
 
 Ask a chat model for a story and you will probably meet Elias: an old clockmaker or lighthouse keeper, quiet, observant, haunted by a loss, and often visited by a woman called Clara. Others have counted these recurring names. This project asks who the characters behind them are, and looks inside the model to see where the name comes from.
 
-Everything here runs locally on one model, Google's **Gemma 4 26B-A4B** (chat and base versions), with llama.cpp for generation and PyTorch for the experiments that need the weights. The write-up is in [`docs/blog-post.md`](docs/blog-post.md): *Who are the ghosts in the machine?*
+Everything here runs locally on one model, Google's **Gemma 4 26B-A4B** (chat and base versions), with llama.cpp for generation and PyTorch for the experiments that need the weights. The write-up is in [`docs/write-up.md`](docs/write-up.md): *Who are the ghosts in the machine?*
 
 ![The base model weighs hundreds of names; the chat model about one](docs/name-roulette.png)
 
